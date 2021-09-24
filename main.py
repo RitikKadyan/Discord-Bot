@@ -64,7 +64,7 @@ async def on_message(message):
     Commands = "-add, -sub, -multi, -div, -ping, -mod(modulus), -floorDiv"
     await message.channel.send(Commands)
 
-  #clear all messsages in channel
+  #clear all messsages in channel only for user "WhoDiis"
   if message.content.startswith('-cAll') & (message.author.name == "WhoDiis"):
     await message.channel.purge()
 
